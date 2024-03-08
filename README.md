@@ -18,6 +18,9 @@
     npx husky init
     // pre-commit 内容文件修改为  pnpm run lint
     pnpm i commitlint @commitlint/cli @commitlint/config-conventional -D -w
+    // commitlint.config.js
+    // eslint-disable-next-line no-undef
+    module.exports = { extends: ['@commitlint/config-conventional'] };
   ```
 
 -
